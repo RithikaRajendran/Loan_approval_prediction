@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Congratulation</title>
+	<style>
+	
+	body{
+	 background-color: #82CAFF;
+	 width:100%;
+	 height:100%;
+	}
+	#up{
+		text-align:center;
+		background-color:white;
+		color:green;
+		width:100%;
+	`	height:20%
+	}
+	
+	#main{
+		margin-left:25%;
+	}
+
+	</style>
+</head>
+
+<body>
+	<div id="up">
+		<h1>Congratulations!!</h1>
+		<h1>You Loan Aplication has higher chances to get approved!</h1>
+		<h2>{{monthly_emi}}</h2>
+	</div>
+
+	<div id="main">
+		<img src="{{url_for('static', filename='Approved.jpg')}}" width="600">
+	</div>
+	
+</body>
+</html>

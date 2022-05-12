@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Loan Approval</title>
+		<style>
+			body{
+				background-color: #82CAFF;
+			}
+
+			#up{
+				background-color:white;
+				width:100%;
+				height:20%
+			}
+			
+			#main{
+				margin-top:5%;
+				margin-left:25%;
+				font-size:20px;
+				font-weight:bold;
+				text-align:center
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div id="up"><h1 style="text-align:center;">Please fill the form to proceed!</h1></div>
+		<div id ="main"><form action="/result" method="post">
+			<table>
+
+
+				<tr>
+				<td><label for="applicant-income">Applicant Income : </label></td>
+ 				<td><input type="text" id="applicant-income" name="applicant-income" placeholder="USD"></td>
+				</tr>
+
+				<tr>
+				<td><label for="co-applicant-income">Co-Applicant Income : </label></td>
+ 				<td><input type="text" id="co-applicant-income" name="co-applicant-income" placeholder="USD"></td>
+				</tr>
+
+				<tr>
+				<td><label for="loan-amount">Loan Amount : </label></td>
+ 				<td><input type="text" id="loan-amount" name="loan-amount" placeholder="USD in thousands"></td>
+				</tr>
+				<br>
+
+				<tr>
+				<td><label for="loan-amount-term">Loan Amount Term: </label></td>
+ 				<td><select id="loan-amount-term" name="loan-amount-term">
+				<option value="60">5 Years</option>
+				<option value="120">10 Years</option>
+				<option value="180">15 Years</option>
+  				<option value="240">20 Years</option>
+				<option value="300">25 Years</option>
+				<option value="360">30 Years</option>
+				<option value="420">35 Years</option>
+				<option value="480">40 Years or More</option>
+				</select></td>
+				</tr>
+
+				<tr>
+				<td><label for="dependents">No of Dependents : </label></td>
+				<td><select id="dependents" name="dependents">
+				<option value="0">Zero</option>
+				<option value="1">One</option>
+				<option value="2">Two</option>
+  				<option value="3">Three or more</option>
+				</select></td>
+				</tr>
+
+				<tr>
+				<td><label>Gender : </label><br></td>
+				<td><input type="radio" id="male" name="gender" value="0">
+  			 	<label for="male">Male</label><br></td>
+  			 	<td><input type="radio" id="female" name="gender" value="1">
+  				<label for="female">Female</label><br></td>
+				</tr>
+
+
+				<tr>
+				<td><label>Married : </label></td>
+				<td><input type="radio" id="yes-married" name="married" value="1">
+  			 	<label for="yes-married">Yes</label></td>
+  			 	<td><input type="radio" id="no-married" name="married" value="0">
+  				<label for="no-married">No</label></td>
+				</tr>
+
+
+				<tr>
+				<td><label>Education : </label></td>
+				<td><input type="radio" id="graduated" name="education" value="1">
+  			 	<label for="graduated">Graduated</label></td>
+  			 	<td><input type="radio" id="not-graduated" name= "education" value="0">
+  				<label for="not-graduated">Not Graduated</label></td>
+				</tr>
+
+
+				<tr>
+				<td><label>Self Employed : </label></td>
+				<td><input type="radio" id="yes-self-employed" name="self-employed" value="1">
+  			 	<label for="yes-self-employed">Yes</label></td>
+  			 	<td><input type="radio" id="no-self-employed" name= "self-employed" value="0">
+  				<label for="no-self-employed">No</label></td>
+				</tr>
+
+
+				<tr>
+				<td><label>Credit History : </label></td>
+				<td><input type="radio" id="credit-score-1" name="credit-history" value="1">
+  			 	<label for="credit-score-1">1</label></td>
+  			 	<td><input type="radio" id="credit-score-0" name= "credit-history" value="0">
+  				<label for="credit-score-0">0</label></td>
+				</tr>
+
+				
+				<tr>
+				<td><label>Property Area : </label></td>
+				<td><input type="radio" id="rural" name="property-area" value="0">
+  			 	<label for="rural">Rural</label></td>
+  			 	<td><input type="radio" id="urban" name= "property-area" value="1">
+  				<label for="urban">Urban</label></td>
+  			 	<td><input type="radio" id="SemiUrban" name= "property-area" value="2">
+  				<label for="SemiUrban">Semi Urban</label></td>
+				</tr>
+				
+				<tr><td> <button type="submit">Predict</button></td></tr>
+			</table>
+			
+		</form>
+		</div>
+	</body>
+</html>

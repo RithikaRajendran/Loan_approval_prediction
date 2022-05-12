@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Sorry</title>
+	<style>
+	
+	body{
+	 background-color: #82CAFF;
+	 width:100%;
+	 height:100%;
+	}
+	#up{
+		color:red;
+		text-align:center;
+		background-color:white;
+		width:100%;
+	`	height:20%
+	}
+	
+	#main{
+		margin-left:25%;
+	}
+
+	</style>
+</head>
+
+<body>
+	<div id="up">
+	<h1>Sorry</h1>
+	<h1>Your Loan Application has higher chances to get denied!</h1>
+	</div>
+
+	<div id="main">
+		<img src="{{url_for('static', filename='Denied.jpg')}}" width="600">
+	</div>
+	
+</body>
+</html>
